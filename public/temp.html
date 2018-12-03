@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <link rel="icon" href="/media/icon.png">
+    <title>Control Environment</title>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    
+
+    <style>
+
+        body{
+          padding:30px;
+          background-color:#6495ED
+        }
+      
+        .control_icon{
+          margin: 5px;
+          width: 50px;
+          height: 50px;
+        }
+      
+        .control_btn{
+          width: 100%;
+        }
+      
+        .label-default{
+        
+          color: black;
+          border: 1px solid transparent;
+          border-color: #ccc;
+        }
+      
+        #table_control_row, #table_control_row tr td:nth-child(2){
+          width: 100%;
+        }
+      
+        #loading{
+          vertical-align: middle;
+          visibility: hidden;
+        }
+      
+        .active{
+          visibility: visible !important;
+        }
+        
+        .tabcenter{
+            margin-left:auto;
+            margin-right:auto;
+        }
+      </style>
+</head>
+<body>
+
+  
+        
+<!-- <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script> -->
+
+
+
+<!-- 
+<script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script> -->
+
+ 
+  <div class="panel panel-warning">
+      <div class="panel-heading"><b>Sensors</b>
+      <div id="sensor_body" class="panel-body" >
+
+      <div class="table-responsive"> 
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Humidité</th>
+              <th>Etat humidité</th>
+              <th>Temperature</th>
+              <th>Etat température</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-sensors">
+          </tbody>
+        </table>
+      </div>
+       </div>
+      </div>
+  </div> 
+
+  
+  
+<script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDYzjUu4Y_mp6fNT2_z0zpMO7f9Kr0NEqc",
+    authDomain: "iotproject-aaea1.firebaseapp.com",
+    databaseURL: "https://iotproject-aaea1.firebaseio.com",
+    projectId: "iotproject-aaea1",
+    storageBucket: "iotproject-aaea1.appspot.com",
+    messagingSenderId: "109843161722"
+  };
+  firebase.initializeApp(config);
+</script>
+     <script src="app.js"></script>
+</body>
+</html>
